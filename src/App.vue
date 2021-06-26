@@ -3,10 +3,14 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
+<button class="button">Button</button>
+<button class="button">Button</button>
+<button class="button">Button</button>
   <router-view/>
 </template>
 
 <style lang="scss">
+@import "~bulma/css/bulma.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
