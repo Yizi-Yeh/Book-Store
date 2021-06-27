@@ -10,12 +10,27 @@
 <script>
 import Header from '@/components/Header/Header.vue'
 import Main from '@/components/Main.vue'
-
+import { onMounted } from '@vue/runtime-core'
+import { useStore } from 'vuex'
 export default {
   name: 'App',
   components: {
     Header,
     Main
+  },
+  setup () {
+    const store = useStore()
+
+    const init = () => {
+      store.dispatch('fetchLocations')
+      store.dispatch('fetchStores')
+    }
+
+    onMounted(() => {
+      init()
+    })
+
+    return {}
   }
 }
 </script>
