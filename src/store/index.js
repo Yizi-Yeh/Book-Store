@@ -5,7 +5,7 @@ export default createStore({
   // Vue.config.devtools = true;
   state: {
     // 使用者目前所選縣市，預設為台北
-    currCity: '臺北市',
+    currCity: '新竹縣',
     // 使用者目前所選行政區，預設為北投區
     currDistrict: '北投區',
     // 存放API回傳的縣市/行政區的列表資訊
